@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+   <link href='https://fonts.googleapis.com/css?family=Vollkorn:700,400,400italic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+   <title>contact</title>
+    <meta charset="utf-8">
+    <title>The Commit</title>
+    <link rel="stylesheet" href="css/wireframe.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+         font-family: 'Open Sans', sans-serif;
+        }
+        
+        #top-bar{
+            height: 3.5em;
+            color: #33ccff;
+            border-color: #33ccff;
+        }
+        #content{
+            position: relative;
+            color: #33ccff;
+            border-color: #33ccff;
+        }
+        #bottom-bar{
+            height: 3.5em;
+            color: #33ccff;
+            border-color: #33ccff;
+        }
+        #topic-list .content{
+            display: block;
+            min-height: 10vh;
+        }
+        
+        #topic-list .topic{
+            color: #33ccff;
+            border-color: #33ccff
+        }
+        
+         #introduction{
+            font-weight: 700;
+            font-family: 'Vollkorn', serif;
+        }
+        #description{
+            font-weight: 400;
+            font-family: 'Vollkorn', serif;
+            font-style: italic;
+        }
+        
+        #map{
+            min-height: 500px;
+            width: 100%;
+        }
+        
+        .pic{
+            margin: 3em;
+        }
+        
+        .row:nth-child(2n) .pic{
+            float: left;
+        }
+        .row:nth-child(2n+1) .pic{
+            float: right;
+        }
+        .pic{
+            color: #ff5252;
+            border-color: #ff5252;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <div id="top-bar">top-bar
+        <div class="row">
+        <div class="col-sm-3">Site name</div>
+          <div class="col-sm-2 pull-right">Contact</div>
+        <div class="col-sm-2 pull-right">Browse</div>
+        <div class="col-sm-2 pull-right">Home</div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="jumbotron">
+           <h1 id="introduction">Page Introduction</h1> 
+            <p id="description">Something something</p> 
+        </div>
+        <div class="" id="topic-list">
+            <div class="row">
+                <div class="col-sm-12 content">
+                    <div class="pic">picture placeholder</div>
+                    Content
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 content">
+                    <div class="pic">picture placeholder</div>
+                    Content
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 content">
+                    <div class="pic">picture placeholder</div>
+                    Content
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 content">
+                    <div class="pic">picture placeholder</div>
+                    Content
+                </div>
+            </div>
+        </div>
+        <div id="map">
+            add map here
+        </div>
+    </div>
+    <div id="bottom-bar">Bottom-bar</div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+<!--  <script src="js/scripts.js"></script>-->
+</body>
+</html>
