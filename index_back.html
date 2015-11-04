@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+   <script src="scripts/googleanalytics.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Vollkorn:700,400,400italic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>Home page</title>
+    <meta charset="utf-8">
+    <title>The Commit</title>
+    <link rel="stylesheet" href="css/wireframe.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+         font-family: 'Open Sans', sans-serif;
+        }
+        
+        
+        #top-bar{
+            position: relative;
+            height: 3.5em;
+            color: #33ccff;
+            border-color: #33ccff;
+        }
+
+        #content{
+            position: relative;
+            color: #33ccff;
+            border-color: #33ccff;
+        }
+        #bottom-bar{
+            height: 3.5em;
+            color: #33ccff;
+            border-color: #33ccff;
+        }
+        #topic-list .content{
+            font-size: 15px
+            display: block;
+            min-height: 10vh;
+        }
+        
+        #topic-list .topic{
+            font-size: 20px;
+            font-family: 'Vollkorn', serif;
+            color: #33ccff;
+            border-color: #33ccff
+        }
+        
+        #introduction{
+            font-weight: 700;
+            font-family: 'Vollkorn', serif;
+        }
+        #description{
+            font-weight: 400;
+            font-family: 'Vollkorn', serif;
+            font-style: italic;
+        }
+        
+        .row:nth-child(2n) .pic{
+            float: left;
+        }
+        .row:nth-child(2n+1) .pic{
+            float: right;
+        }
+        .pic{
+            color: #ff5252;
+            border-color: #ff5252;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-bar">top-bar
+       <div class="row">
+        <div class="col-sm-3">Site name</div>
+      <div class="col-sm-2 pull-right">Contact</div>
+        <div class="col-sm-2 pull-right">Browse</div>
+        <div class="col-sm-2 pull-right">Home</div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="jumbotron">
+            <h1 id="introduction">Page Introduction</h1> 
+            <p id="description">Something something</p> 
+        </div>
+        <div class="row">
+            <div class="col-sm-9" id="topic-list">
+                <div class="row">
+                    <div class="col-sm-4 topic">Headline</div>
+                    <div class="col-sm-8 content">
+                        <div class="pic">picture placeholder</div>
+                        Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 topic">Headline</div>
+                    <div class="col-sm-8 content">
+                        <div class="pic">picture placeholder</div>
+                        Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 topic">Headline</div>
+                    <div class="col-sm-8 content">
+                        <div class="pic">picture placeholder</div>
+                        Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 topic">Headline</div>
+                    <div class="col-sm-8 content">
+                        <div class="pic">picture placeholder</div>
+                        Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content 
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">Right Bar</div>
+        </div>
+    </div>
+    <div id="bottom-bar">Bottom-bar</div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+<!--  <script src="js/scripts.js"></script>-->
+</body>
+</html>
