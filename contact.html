@@ -19,6 +19,29 @@
       </script><script type="text/javascript" src="./Contact_files/modernizr-2.7.1.js"></script>
       <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/56398e5cedc0d1c96e1166f3/56398e5ddc108ec96ef2fa84_New%20icon.ico">
       <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/56398e5cedc0d1c96e1166f3/56398e5ddc108ec96ef2fa83_metric-webclip.png">
+      
+      
+      <style>
+      #map {
+        width: 1000px;
+        height: 400px;
+      }
+    </style>
+       <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script>
+         function initialize() {
+           var mapCanvas = document.getElementById('map');
+           var mapOptions = {
+             center: new google.maps.LatLng(13.736570, 100.531360),
+             zoom: 17,
+             mapTypeId: google.maps.MapTypeId.ROADMAP
+           }
+           var map = new google.maps.Map(mapCanvas, mapOptions)
+         }
+         google.maps.event.addDomListener(window, 'load', initialize);
+      </script>
+      
+      
    </head>
    <body>
       <div class="w-nav navigation" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
@@ -108,7 +131,10 @@
                   </div>
                </div>
                <div class="w-col w-col-6 center-contents"><img height="300" src="./Contact_files/563f6fae04e67e960511a7cc_12045441_936218706443548_3636150588694830804_o.jpg" data-ix="fade-in-on-scroll" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 900ms, transform 900ms cubic-bezier(0.165, 0.84, 0.44, 1);"></div>
+               
             </div>
+            
+      <div id="map"></div>
          </div>
       </div>
       <div class="w-section section purple" id="pricing">
