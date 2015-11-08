@@ -477,7 +477,7 @@
 	  api.ready = function() {
 	    var doBranding = $html.attr('data-wf-status');
 
-	    if (doBranding) {
+	    if (!doBranding) {
 	      var $branding = $('<div></div>');
 	      var $link = $('<a></a>');
 	      $link.attr('href', 'http://webflow.com?utm_campaign=brandjs');
