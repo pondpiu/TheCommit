@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+   <link href='https://fonts.googleapis.com/css?family=Vollkorn:700,400,400italic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+   <title>Browse</title>
+    <meta charset="utf-8">
+    <title>The Commit</title>
+    <link rel="stylesheet" href="css/wireframe.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+         font-family: 'Open Sans', sans-serif;
+        }
+        
+        #top-bar{
+            height: 3.5em;
+            color: #33ccff;
+            border-color: #33ccff;
+        }
+        #content{
+            position: relative;
+            color: #33ccff;
+            border-color: #33ccff;
+        }
+        #bottom-bar{
+            height: 3.5em;
+            color: #33ccff;
+            border-color: #33ccff;
+        }
+        #topic-list .content{
+            display: block;
+            min-height: 10vh;
+        }
+        
+        #topic-list .topic{
+            color: #33ccff;
+            border-color: #33ccff
+        }
+        
+         #introduction{
+            font-weight: 700;
+            font-family: 'Vollkorn', serif;
+        }
+        #description{
+            font-weight: 400;
+            font-family: 'Vollkorn', serif;
+            font-style: italic;
+        }
+        
+        #search-bar{
+            width: 80%;
+        }
+        
+        .pic{
+            min-height: 150px;
+        }
+        
+        .row:nth-child(2n) .pic{
+            float: left;
+        }
+        .row:nth-child(2n+1) .pic{
+            float: right;
+        }
+        .pic-wide{
+            color: #ff5252;
+            border-color: #ff5252;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-bar">top-bar
+       <div class="row">
+        <div class="col-sm-3">Site name</div>
+      <div class="col-sm-2 pull-right"><a href="contact.html">Contact</a></div>
+        <div class="col-sm-2 pull-right"><a href="browse.html">Browse</a></div>
+        <div class="col-sm-2 pull-right"><a href="index.html">Home</a></div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="jumbotron">
+           <h1 id="introduction">Page Introduction</h1> 
+            <p id="description">Something something</p>  
+        </div>
+        <div class="" id="display">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+            <input id="search-bar"></input>
+            <button type="button" class="btn btn-success">Search</button>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 pic">pic</div>
+            <div class="col-sm-4 pic">pic</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 pic">pic</div>
+            <div class="col-sm-8 pic">pic</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 pic">pic</div>
+            <div class="col-sm-8 pic">pic</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 pic">pic</div>
+            <div class="col-sm-4 pic">pic</div>
+        </div>
+        </div>
+        <div id="map">
+            add map here
+        </div>
+    </div>
+    <div id="bottom-bar">Bottom-bar</div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+<!--  <script src="js/scripts.js"></script>-->
+</body>
+</html>
